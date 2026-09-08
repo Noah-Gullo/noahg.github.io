@@ -20,7 +20,12 @@ body {
 }
 
 h1{
-  color: var(--cg-black)
+  color: var(--cg-black);
+  transition: ease-in-out 0.2s;
+}
+
+h1:hover{
+  transform: scale(1.02);
 }
 
 /* CSS for navigation */
@@ -73,7 +78,7 @@ h1{
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color: rgb(0, 68, 255);
 }
 
 .logo a {
@@ -110,6 +115,11 @@ main {
   /* Debug border */
   /* border: 2px solid blue; */
 }
+
+.project img:hover{
+  border: 2px solid var(--cg-black);
+}
+
 
 .item-link {
   width: 70%;
@@ -204,6 +214,20 @@ main {
 
 /* CSS for resume page */
 
+.resume{
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume section {
+  border-bottom: 2px solid var(--cg-black); 
+  padding-bottom: 20px;            
+  margin-bottom: 20px;           
+}
+
 .button {
   background-color: var(--cg-black);
   border: none;
@@ -223,6 +247,7 @@ main {
 
 .resume h2 {
   font-family: Georgia;
+  transition: ease-in-out 0.2s;
 }
 
 /* CSS for contact form */
@@ -250,6 +275,23 @@ textarea {
 form {
   width: 500px;
   margin: 0 auto;
+}
+
+#contact-form input[type="submit"]{
+  background-color: var(--cg-black);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+#contact-form input[type="submit"]:hover{
+  background-color: var(--cg-grey);
+  color: var(--cg-black);
+  padding: 5px;
+  border: 1px solid var(--cg-black);
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 /* CSS for footer */
