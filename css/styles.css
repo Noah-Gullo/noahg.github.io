@@ -294,6 +294,24 @@ form {
   border-radius: 10px;
 }
 
+/* CSS for Contact Buttons */
+.contact-info button {
+  background-color: var(--cg-black);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 10px 20px;
+  text-align: center;
+
+  border-radius: 15px;
+}
+
+.contact-info button:hover {
+  background-color: var(--cg-blue);
+}
+
 /* CSS for footer */
 
 .footer {
